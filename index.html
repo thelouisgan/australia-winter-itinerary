@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#173c35">
+  <meta name="description" content="A ten-day winter itinerary through Melbourne, Mount Buller, Colac and Sydney.">
+  <title>Melbourne to Sydney | 10-day Australia trip</title>
+  <style>
+    :root {
+  --ink: #183a32;
+  --muted: #54645b;
+  --paper: #fbf8ef;
+  --sand: #f3e7d4;
+  --line: #deddd1;
+  --gum: #dfe9de;
+  --sky: #dcecf0;
+  --ochre: #9b492f;
+  --gold: #f5ce78;
+  --white: #fffefa;
+  --display: Georgia, "Times New Roman", serif;
+  --body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.62 var(--body); }
+a { color: inherit; text-underline-offset: .22em; }
+button, input { font: inherit; }
+button, summary { cursor: pointer; }
+:focus-visible { outline: 3px solid #bd6429; outline-offset: 4px; }
+img { width: 100%; height: 100%; display: block; object-fit: cover; }
+h1, h2, h3, h4, p, figure { margin: 0; }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; }
+h2 { font-size: clamp(2.3rem, 5.2vw, 4.15rem); letter-spacing: -.055em; }
+h3 { font-size: 1.65rem; letter-spacing: -.035em; }
+ul { padding-inline-start: 1.2rem; }
+.wrap { width: min(1180px, 100% - clamp(32px, 8vw, 108px)); margin-inline: auto; }
+.skip { position: fixed; top: 10px; left: 10px; z-index: 10; padding: 8px 12px; background: var(--white); transform: translateY(-150%); }
+.skip:focus { transform: translateY(0); }
+.sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.bar { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.bar nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6px clamp(8px, 2vw, 28px); }
+.bar a { text-decoration: none; font-weight: 700; font-size: .88rem; }
+.bar nav a:hover { text-decoration: underline; }
+.brand { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.brand span { color: var(--ochre); font-size: 1.35rem; }
+.pill, .outline { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: .66rem 1.1rem; border-radius: 999px; border: 1px solid transparent; font: 700 .88rem/1.4 var(--body); text-decoration: none; }
+.pill { background: var(--ink); color: var(--white); }
+.outline { background: transparent; border-color: currentColor; color: var(--ink); }
+.outline:hover, .outline[aria-pressed="true"] { background: var(--gum); }
+.primary { background: var(--gold); color: #21382c; }
+.primary:hover { background: #ffe0a0; }
+.hero { position: relative; display: grid; align-items: center; isolation: isolate; min-height: clamp(470px, 54vw, 680px); background: #213f4d; color: #fffdf4; }
+.hero-image, .hero::after { position: absolute; inset: 0; z-index: -2; }
+.hero-image { object-position: 60% 55%; }
+.hero::after { z-index: -1; content: ""; background: linear-gradient(90deg,rgba(13,34,38,.96) 0%,rgba(13,34,38,.81) 37%,rgba(13,34,38,.25) 69%,rgba(13,34,38,.1)),linear-gradient(0deg,#14292c80,transparent 40%); }
+.hero-inner { padding-block: 58px 68px; }
+.overline { font-size: .75rem; font-weight: 800; letter-spacing: .105em; text-transform: uppercase; }
+.hero .overline { color: var(--gold); }
+.hero h1 { font-size: clamp(4rem, 10vw, 9rem); line-height: .91; letter-spacing: -.07em; margin: 18px 0 25px; }
+.hero h1 em { color: var(--gold); font-weight: inherit; }
+.hero-copy { max-width: 42ch; margin-bottom: 25px; font-size: clamp(1rem, 1.5vw, 1.16rem); }
+.hero-credit { position: absolute; right: clamp(16px, 4vw, 52px); bottom: 13px; color: #fff; background: #13262bbb; padding: 3px 10px; font-size: .73rem; border-radius: 99px; }
+.country { background: var(--gum); }
+.country-grid { display: grid; grid-template-columns: minmax(165px,.44fr) 1fr; gap: 26px; padding-block: 30px; }
+.country h2 { max-width: 15ch; font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.04em; }
+.country p { max-width: 75ch; }
+details { font-size: .87rem; }
+details summary { font-weight: 750; }
+.country details { margin-top: 10px; }
+.country details ul { margin-bottom: 0; }
+.section { padding-block: clamp(55px, 7.5vw, 105px) 0; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; margin-bottom: 19px; }
+.section-heading .overline { color: var(--ochre); margin-bottom: 8px; }
+.crew, .small { font-size: .88rem; }
+.muted, .crew { color: var(--muted); }
+.route-line { color: var(--muted); margin-bottom: 22px; font-weight: 650; }
+.destinations { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
+.destination { min-width: 0; display: grid; grid-template-rows: 1fr auto; overflow: hidden; border-radius: 18px; background: var(--white); border: 1px solid var(--line); text-decoration: none; }
+.destination img { height: clamp(128px, 17vw, 220px); background: #5b7b82; }
+.destination div { display: grid; padding: 13px 15px 15px; gap: 1px; }
+.destination strong { font-family: var(--display); font-size: clamp(1.17rem, 2.1vw, 1.68rem); line-height: 1.1; }
+.destination span { font-size: .8rem; color: var(--muted); }
+.destination:hover { border-color: var(--ink); }
+.itinerary-heading { margin-bottom: 24px; }
+.itinerary { display: grid; grid-template-columns: minmax(150px,210px) minmax(0,1fr); gap: 25px; }
+.itinerary:has(.day-nav[hidden]) { display: block; }
+.day-nav { align-self: start; display: grid; background: var(--white); border: 1px solid var(--line); border-radius: 18px; padding: 7px; position: sticky; top: 18px; }
+.day-nav a { display: grid; grid-template-columns: 28px 1fr; align-items: center; column-gap: 8px; padding: 9px 10px; text-decoration: none; min-height: 46px; border-radius: 11px; }
+.day-nav a > span { grid-row: 1 / 3; color: var(--ochre); font-size: .76rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.day-nav strong { font-size: .8rem; line-height: 1.15; }
+.day-nav small { font-size: .7rem; color: var(--muted); }
+.day-nav a[aria-current="true"] { background: var(--ink); color: var(--white); }
+.day-nav a[aria-current="true"] :is(span,small) { color: var(--gold); }
+.day-nav a:hover:not([aria-current="true"]) { background: var(--gum); }
+.day-panel { background: var(--white); border: 1px solid var(--line); border-radius: 22px; padding: clamp(18px,3.2vw,35px); margin-bottom: 14px; scroll-margin-top: 14px; }
+.day-top { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 14px; margin-bottom: 19px; }
+.day-kicker { font-size: .76rem; font-weight: 800; letter-spacing: .085em; text-transform: uppercase; color: var(--ochre); margin-bottom: 7px; }
+.day-top h3 { font-size: clamp(1.9rem, 4vw, 3.28rem); letter-spacing: -.055em; }
+.stay { background: var(--gum); border-radius: 99px; padding: 6px 10px; font-size: .74rem; font-weight: 750; }
+.day-layout { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(0,1fr); gap: clamp(15px, 3vw, 30px); }
+.agenda-item { display: grid; grid-template-columns: 69px 1fr; gap: 10px; border-top: 1px solid var(--line); padding-block: 12px; }
+.agenda-item :is(time,.time-label) { color: var(--ochre); font-size: .76rem; font-weight: 800; }
+.agenda strong { display: block; margin-bottom: 4px; }
+.agenda p { color: var(--muted); font-size: .91rem; }
+.day-shot { background: #5b7b82; height: clamp(155px,20vw,245px); border-radius: 13px; overflow: hidden; position: relative; }
+.shot-label { position: absolute; bottom: 10px; left: 10px; color: #fff; background: #173a32e8; padding: 4px 9px; font-size: .72rem; font-weight: 700; border-radius: 99px; }
+.evening { background: var(--sky); border-radius: 13px; padding: 14px 16px; margin-top: 10px; font-size: .88rem; }
+.evening h4 { font-size: .73rem; text-transform: uppercase; letter-spacing: .09em; margin-bottom: 5px; }
+.evening p + p { margin-top: 7px; }
+.pager { display: flex; justify-content: space-between; gap: 10px; }
+.pager a:last-child { margin-left: auto; }
+.planning { margin-top: clamp(55px, 7.5vw, 105px); background: var(--sand); }
+.planning .section { padding-block: clamp(40px,6vw,76px); }
+.check-grid { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); gap: 16px; }
+.check-box, .resources { border-radius: 19px; padding: clamp(18px,3vw,30px); background: var(--white); }
+.resources { background: var(--ink); color: var(--white); }
+.resources h3 + p { margin-top: 10px; font-size: .88rem; }
+.resources ul { margin: 12px 0 26px; font-size: .94rem; }
+.resources li + li { margin-top: 5px; }
+.check-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+#check-count { font-weight: 750; }
+progress { width: 100%; height: 12px; margin: 10px 0 8px; accent-color: #285f50; }
+.check-box label { display: flex; border-top: 1px solid var(--line); gap: 8px; align-items: start; cursor: pointer; padding: 10px 0; font-size: .9rem; }
+.check-box input { width: 18px; height: 18px; flex: none; accent-color: #285f50; margin: 3px 3px 0 0; }
+.check-box label:has(input:checked) span { color: var(--muted); text-decoration: line-through; }
+footer { background: #16352e; color: #f6f1e6; }
+.footer-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding-block: 32px; }
+.footer-inner p { max-width: 54ch; margin-block: 5px 9px; font-size: .85rem; }
+.credits li { overflow-wrap: anywhere; }
+@media(max-width: 780px) {
+  .hero::after { background: linear-gradient(90deg,#10282de8,#10282d55),linear-gradient(0deg,#10282db0,transparent); }
+  .destinations { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .itinerary { display: block; }
+  .day-nav { position: static; display: flex; overflow-x: auto; gap: 3px; margin-bottom: 12px; }
+  .day-nav a { flex: 0 0 auto; grid-template-columns: 20px auto; }
+}
+@media(max-width: 550px) {
+  .bar { flex-wrap: wrap; gap: 4px 12px; padding-block: 9px; }
+  .bar nav { justify-content: flex-start; }
+  .bar nav a { font-size: .76rem; }
+  .hero-inner { padding-block: 60px; }
+  .country-grid, .day-layout, .check-grid, .footer-inner { grid-template-columns: 1fr; }
+  .country-grid { gap: 10px; }
+  .country h2 { max-width: none; }
+  .day-shot { height: 180px; }
+}
+@media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  body { background: white; color: black; }
+  .site-header, .hero-image, .hero-credit, .hero .pill, .day-nav, .pager, #show-all, #print-button, .skip { display: none !important; }
+  .hero, .planning, footer { background: white; color: black; min-height: 0; }
+  .hero::after { display: none; }
+  .hero h1, .hero h1 em, .hero .overline { color: black; }
+  .hero h1 { font-size: 42pt; }
+  .hero-inner, .section, .planning .section { padding-block: 16px 0; }
+  .country-grid { padding-block: 12px; }
+  .itinerary { display: block; }
+  .day-panel[hidden] { display: block !important; }
+  .day-panel, .destinations { break-inside: avoid; }
+  .day-shot { height: 100px; }
+  .planning { margin-top: 16px; }
+  .resources { color: black; background: white; }
+  details { display: block; }
+}
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to itinerary</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top"><span aria-hidden="true">✦</span> Australia trip</a>
+      <nav aria-label="Main navigation">
+        <a href="#country">Country</a>
+        <a href="#route">Route</a>
+        <a href="#days">Itinerary</a>
+        <a class="pill" href="#checklist">Checklist</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="main-title">
+      <img class="hero-image" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/1280px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg" alt="Sydney Opera House and Harbour Bridge at dusk" fetchpriority="high">
+      <div class="wrap hero-inner">
+        <p class="overline">10 days · Victoria &amp; New South Wales</p>
+        <h1 id="main-title">Melbourne<br>to <em>Sydney</em></h1>
+        <p class="hero-copy">Start in Melbourne, ski Mount Buller, slow down in Colac, then spend three nights in Sydney before flying home to Singapore.</p>
+        <a class="pill primary" href="#days">Explore the itinerary <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero-credit">Sydney Harbour, NSW</p>
+    </section>
+
+    <section class="country" id="country" aria-labelledby="country-title">
+      <div class="wrap country-grid">
+        <h2 id="country-title">Acknowledgement of Country</h2>
+        <div>
+          <p>We acknowledge the Traditional Custodians of the lands and waters we travel through, and their continuing connection to Country. We pay our respects to Elders past and present, and extend that respect to all Aboriginal and Torres Strait Islander peoples.</p>
+          <details>
+            <summary>Traditional Custodians along the route</summary>
+            <ul>
+              <li><a href="https://whatson.melbourne.vic.gov.au/documents/Melbourne_Town_Hall_Tours_Accessibility_Guide.pdf">Melbourne</a> · Wurundjeri Woi-wurrung and Bunurong / Boon Wurrung peoples of the Kulin Nation</li>
+              <li><a href="https://www.alpineresorts.vic.gov.au/about-us/our-partners">Mount Buller</a> · Taungurung people</li>
+              <li><a href="https://www.colacotway.vic.gov.au/Home">Colac Otway region</a> · Gulidjan and Gadubanud peoples</li>
+              <li><a href="https://www.cityofsydney.nsw.gov.au/people-communities/reconciliation">Central Sydney</a> · Gadigal people of the Eora Nation</li>
+              <li><a href="https://www.waverley.nsw.gov.au/community/aboriginal_and_torres_strait_islander_people">Waverley coast</a> · Bidiagal, Birrabirragal and Gadigal peoples</li>
+              <li><a href="https://www.northernbeaches.nsw.gov.au/sites/default/files/documents/general-information/disability-inclusion-action-plan/disabilityinclusionactionplan-2022-2026-20220222.pdf">Northern Beaches</a> · Gayamaygal and Garigal peoples</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="route" aria-labelledby="route-title">
+      <div class="section-heading">
+        <div><p class="overline">Saturday to Monday · Dates to be confirmed</p><h2 id="route-title">The route</h2></div>
+        <p class="crew">Six travellers</p>
+      </div>
+      <p class="route-line">Singapore → Melbourne → Mount Buller → Colac → Melbourne → Sydney → Singapore</p>
+      <div class="destinations">
+        <a class="destination" href="#day-1"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Melbourne_skyline_at_night.jpg/960px-Melbourne_skyline_at_night.jpg" alt="" loading="lazy"><div><strong>Melbourne</strong><span>Days 1–2 &amp; 6</span></div></a>
+        <a class="destination" href="#day-3"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/The_West_Ridge.jpg/960px-The_West_Ridge.jpg" alt="" loading="lazy"><div><strong>Mount Buller</strong><span>Days 3–4</span></div></a>
+        <a class="destination" href="#day-5"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Lake_Colac.jpg/960px-Lake_Colac.jpg" alt="" loading="lazy"><div><strong>Colac</strong><span>Nights 4–5</span></div></a>
+        <a class="destination" href="#day-7"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/1280px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg" alt="" loading="lazy"><div><strong>Sydney</strong><span>Days 7–10</span></div></a>
+      </div>
+    </section>
+
+    <section class="wrap section" id="days" aria-labelledby="days-heading">
+      <div class="section-heading itinerary-heading"><h2 id="days-heading">Day by day</h2><button class="outline" id="show-all" type="button" aria-pressed="false" hidden>Show all 10 days</button></div>
+      <p class="sr" id="day-announcement" aria-live="polite"></p>
+      <div class="itinerary">
+        <nav id="day-nav" class="day-nav" aria-label="Itinerary days" hidden>
+          <a href="#day-1"><span>01</span><strong>Arrive in Melbourne</strong><small>Saturday</small></a>
+          <a href="#day-2"><span>02</span><strong>Market, zoo &amp; beaches</strong><small>Sunday</small></a>
+          <a href="#day-3"><span>03</span><strong>Mount Buller</strong><small>Monday</small></a>
+          <a href="#day-4"><span>04</span><strong>Snow &amp; drive to Colac</strong><small>Tuesday</small></a>
+          <a href="#day-5"><span>05</span><strong>Colac at home</strong><small>Wednesday</small></a>
+          <a href="#day-6"><span>06</span><strong>Back to Melbourne</strong><small>Thursday</small></a>
+          <a href="#day-7"><span>07</span><strong>Fly to Sydney</strong><small>Friday</small></a>
+          <a href="#day-8"><span>08</span><strong>Bondi &amp; Tamarama</strong><small>Saturday</small></a>
+          <a href="#day-9"><span>09</span><strong>Ferry to Manly</strong><small>Sunday</small></a>
+          <a href="#day-10"><span>10</span><strong>Fly to Singapore</strong><small>Monday</small></a>
+        </nav>
+        <div class="day-stack">
+          <article class="day-panel" id="day-1" data-day="1">
+          <div class="day-top"><div><p class="day-kicker">Day 01 / Saturday · Melbourne</p><h3 tabindex="-1">Arrive in Melbourne</h3></div><span class="stay">Sleep · A family home</span></div>
+          <div class="day-layout"><div class="agenda">
+            <div class="agenda-item"><time>Morning</time><div><strong>Singapore → Melbourne</strong><p>Aim for a nonstop flight landing by midday. Head into Melbourne and drop bags at A family home.</p></div></div>
+            <div class="agenda-item"><time>13:00</time><div><strong>The first Melbourne walk</strong><p>Start at Flinders Street Station and Federation Square, then head through Degraves Street and the CBD laneways for coffee and lunch.</p></div></div>
+            <div class="agenda-item"><time>15:30</time><div><strong>Royal Botanic Gardens</strong><p>Take a relaxed garden loop before a group dinner. <a href="https://www.rbg.vic.gov.au/melbourne-gardens" target="_blank" rel="noopener noreferrer">Garden details ↗</a></p></div></div>
+          </div><div class="day-side"><div class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Melbourne_skyline_at_night.jpg/960px-Melbourne_skyline_at_night.jpg" alt="Melbourne skyline at night" loading="lazy"><span class="shot-label">City lights</span></div><div class="evening"><h4>Tonight</h4><p><strong>Five adults:</strong> drinks and dancing at <a href="https://attik.com.au/whats-on" target="_blank" rel="noopener noreferrer">ATTIK ↗</a>; take a taxi or rideshare home.</p><p><strong>Under-18 plan:</strong> alcohol-free movie or games at the house with the host or another agreed trusted adult.</p></div></div></div>
+        </article>
+          <article class="day-panel" id="day-2" data-day="2">
+          <div class="day-top"><div><p class="day-kicker">Day 02 / Sunday · Melbourne</p><h3 tabindex="-1">Market, zoo and beaches</h3></div><span class="stay">Sleep · A family home</span></div>
+          <div class="day-layout"><div class="agenda">
+            <div class="agenda-item"><time>09:00</time><div><strong>Queen Victoria Market</strong><p>Breakfast, coffee and a stroll through the stalls. Sunday trading is 9am–4pm. <a href="https://qvm.com.au/visit-us/" target="_blank" rel="noopener noreferrer">Market hours ↗</a></p></div></div>
+            <div class="agenda-item"><time>11:15</time><div><strong>Melbourne Zoo</strong><p>Allow about three hours for the zoo and lunch. It is currently open 9am–5pm. <a href="https://www.zoo.org.au/melbourne/" target="_blank" rel="noopener noreferrer">Zoo details ↗</a></p></div></div>
+            <div class="agenda-item"><time>15:00</time><div><strong>Brighton → St Kilda</strong><p>See Brighton’s bathing boxes, then walk St Kilda’s foreshore and pier. In ski season, treat these as scenic winter beach stops.</p></div></div>
+          </div><div class="day-side"><div class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Brighton_bathing_boxes.jpg/960px-Brighton_bathing_boxes.jpg" alt="Brighton Beach's colourful bathing boxes" loading="lazy"><span class="shot-label">Beach day</span></div><div class="evening"><h4>Tonight</h4><p><strong>Five adults:</strong> Sunday club night at <a href="https://www.storyvillemelbourne.com.au/afterdark" target="_blank" rel="noopener noreferrer">StoryVille ↗</a>. Keep it early and have the next morning’s driver stay sober and get enough sleep.</p><p><strong>Under-18 plan:</strong> joins dinner, then returns to the house for an all-ages evening with the agreed adult.</p></div></div></div>
+        </article>
+          <article class="day-panel" id="day-3" data-day="3">
+          <div class="day-top"><div><p class="day-kicker">Day 03 / Monday · Mt Buller</p><h3 tabindex="-1">First day at Mount Buller</h3></div><span class="stay">Sleep · Mount Buller</span></div>
+          <div class="day-layout"><div class="agenda">
+            <div class="agenda-item"><time>07:00</time><div><strong>Drive from Melbourne</strong><p>Have the rental ready before departure. Allow around three hours before stops and resort entry. The driver should be rested and sober. <a href="https://www.mtbuller.com.au/winter/faqs" target="_blank" rel="noopener noreferrer">Mt Buller FAQ ↗</a></p></div></div>
+            <div class="agenda-item"><time>11:00</time><div><strong>Gear up</strong><p>Collect prebooked skis or boards, boots and helmets; first-timers take a lesson. Leave luggage at your accommodation if it offers storage.</p></div></div>
+            <div class="agenda-item"><time>Afternoon</time><div><strong>Ski and snowboard</strong><p>Ride through the afternoon, then collect your luggage and check in for one night on the mountain.</p></div></div>
+          </div><div class="day-side"><div class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/The_West_Ridge.jpg/960px-The_West_Ridge.jpg" alt="Snow on Mount Buller's West Ridge" loading="lazy"><span class="shot-label">Snow day one</span></div><div class="evening"><h4>Tonight</h4><p>Mountain dinner with all six. Keep it relaxed so Tuesday’s ride and drive feel good.</p></div></div></div>
+        </article>
+          <article class="day-panel" id="day-4" data-day="4">
+          <div class="day-top"><div><p class="day-kicker">Day 04 / Tuesday · Mt Buller → Colac</p><h3 tabindex="-1">Morning on the snow, then Colac</h3></div><span class="stay">Sleep · A family home</span></div>
+          <div class="day-layout"><div class="agenda">
+            <div class="agenda-item"><time>08:30</time><div><strong>Breakfast and checkout</strong><p>Check whether the lodge can hold your bags while you ride. Pack the car before heading to the slopes if needed.</p></div></div>
+            <div class="agenda-item"><time>09:00</time><div><strong>Second snow session</strong><p>Ski or snowboard through the morning, then return rental gear and eat lunch. This is a shorter second day on the mountain.</p></div></div>
+            <div class="agenda-item"><time>13:30</time><div><strong>Direct drive to Colac</strong><p>Budget around 6–7 hours with breaks and traffic. Two rested drivers make the late arrival easier; no one drinks before their driving is finished.</p></div></div>
+          </div><div class="day-side"><div class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/The_West_Ridge.jpg/960px-The_West_Ridge.jpg" alt="Snow-covered Mount Buller ridge" loading="lazy"><span class="shot-label">Snow day two</span></div><div class="evening"><h4>Tonight</h4><p>Late dinner and a home party at A family home. Adults can have drinks after arrival; the under-18 traveller has alcohol-free options.</p></div></div></div>
+        </article>
+          <article class="day-panel" id="day-5" data-day="5">
+          <div class="day-top"><div><p class="day-kicker">Day 05 / Wednesday · Colac</p><h3 tabindex="-1">A day at home in Colac</h3></div><span class="stay">Sleep · A family home</span></div>
+          <div class="day-layout"><div class="agenda">
+            <div class="agenda-item"><time>Late AM</time><div><strong>Sleep in</strong><p>Take the morning slowly after two snow days and the drive across Victoria.</p></div></div>
+            <div class="agenda-item"><time>All day</time><div><strong>Stay home and chill</strong><p>Cook, order food, play games, talk, rest and spend time with the hosts. Leave the whole day free.</p></div></div>
+            <div class="agenda-item"><time>Evening</time><div><strong>Home party</strong><p>Music, food and drinks for the adults; mocktails and other alcohol-free drinks for the under-18 traveller.</p></div></div>
+          </div><div class="day-side"><div class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Lake_Colac.jpg/960px-Lake_Colac.jpg" alt="Lake Colac landscape" loading="lazy"><span class="shot-label">Colac pause</span></div><div class="evening"><h4>Tonight</h4><p>No bookings, no rushing. Tomorrow’s driver should finish the night with enough rest for the return trip.</p></div></div></div>
+        </article>
+          <article class="day-panel" id="day-6" data-day="6">
+          <div class="day-top"><div><p class="day-kicker">Day 06 / Thursday · Colac → Melbourne</p><h3 tabindex="-1">Back to Melbourne</h3></div><span class="stay">Sleep · A family home</span></div>
+          <div class="day-layout"><div class="agenda">
+            <div class="agenda-item"><time>Morning</time><div><strong>Breakfast with the hosts</strong><p>Pack, thank the hosts and drive back toward Melbourne. Allow roughly 2½–3 hours with a break and traffic.</p></div></div>
+            <div class="agenda-item"><time>Afternoon</time><div><strong>Free city time</strong><p>Wander Fitzroy’s shops and street art, or revisit your favourite CBD lanes. Drop bags at A family home.</p></div></div>
+            <div class="agenda-item"><time>19:00</time><div><strong>Group dinner</strong><p>Have dinner all together before the adults’ final Melbourne club night. Pack for the Sydney flight.</p></div></div>
+          </div><div class="day-side"><div class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Melbourne_skyline_at_night.jpg/960px-Melbourne_skyline_at_night.jpg" alt="Melbourne city lights over the Yarra" loading="lazy"><span class="shot-label">Final city night</span></div><div class="evening"><h4>Tonight</h4><p><strong>Five adults:</strong> <a href="https://www.newguernica.com/events" target="_blank" rel="noopener noreferrer">New Guernica’s Thursday night ↗</a>.</p><p><strong>Under-18 plan:</strong> an alcohol-free night at A family home with the agreed adult.</p></div></div></div>
+        </article>
+          <article class="day-panel" id="day-7" data-day="7">
+            <div class="day-top">
+              <div><p class="day-kicker">Day 07 / Friday · Melbourne → Sydney</p><h3 tabindex="-1">Sydney Harbour</h3></div>
+              <span class="stay">Sleep · Sydney, night 1 of 3</span>
+            </div>
+            <div class="day-layout">
+              <div class="agenda">
+                <div class="agenda-item"><span class="time-label">Morning</span><div><strong>Return the car and fly MEL → SYD</strong><p>Aim for a late-morning flight from Melbourne Airport. Allow time for the rental return and domestic bag drop. The flight takes about 1 hour 25 minutes.</p></div></div>
+              <div class="agenda-item"><span class="time-label">Early PM</span><div><strong>Drop bags near the CBD</strong><p>Use the airport train or share a ride. A base near the CBD or Circular Quay keeps the harbour and ferry easy to reach.</p></div></div>
+              <div class="agenda-item"><span class="time-label">15:00</span><div><strong>Circular Quay, the Opera House and The Rocks</strong><p>Walk to the <a href="https://www.sydneyoperahouse.com/visit/getting-here/public-transport-riding-or-walking">Opera House forecourt</a>, then follow the waterfront to The Rocks for Harbour Bridge views.</p></div></div>
+              </div>
+              <div class="day-side">
+                <figure class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/1280px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg" alt="Sydney Opera House and Harbour Bridge at dusk" loading="lazy"><figcaption class="shot-label">Sydney Harbour</figcaption></figure>
+                <div class="evening"><h4>Tonight</h4><p>Dinner with all six in The Rocks or the CBD.</p></div>
+              </div>
+            </div>
+          </article>
+          <article class="day-panel" id="day-8" data-day="8">
+            <div class="day-top">
+              <div><p class="day-kicker">Day 08 / Saturday · Sydney coast</p><h3 tabindex="-1">Bondi and Tamarama</h3></div>
+              <span class="stay">Sleep · Sydney, night 2 of 3</span>
+            </div>
+            <div class="day-layout">
+              <div class="agenda">
+                <div class="agenda-item"><span class="time-label">09:30</span><div><strong>Bondi Beach and brunch</strong><p>Head to Bondi for coffee, the promenade and time on the sand.</p></div></div>
+              <div class="agenda-item"><span class="time-label">11:30</span><div><strong>Coastal walk to Tamarama</strong><p>Follow the open sections towards <a href="https://www.waverley.nsw.gov.au/recreation/parks_and_reserves/tamarama_park">Tamarama</a>. Turn back there for a manageable winter walk and check local closures before leaving.</p></div></div>
+              <div class="agenda-item"><span class="time-label">Afternoon</span><div><strong>Return to the city</strong><p>Leave the rest of the afternoon open. If coastal weather turns, swap the walk for the Art Gallery of New South Wales.</p></div></div>
+              </div>
+              <div class="day-side">
+                <figure class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Sydney_%28AU%29%2C_Bondi_Beach_--_2019_--_2349.jpg/960px-Sydney_%28AU%29%2C_Bondi_Beach_--_2019_--_2349.jpg" alt="Bondi Beach and its headlands" loading="lazy"><figcaption class="shot-label">Bondi Beach</figcaption></figure>
+                <div class="evening"><h4>Tonight</h4><p>Group dinner in Chinatown or Surry Hills.</p></div>
+              </div>
+            </div>
+          </article>
+          <article class="day-panel" id="day-9" data-day="9">
+            <div class="day-top">
+              <div><p class="day-kicker">Day 09 / Sunday · Sydney Harbour → Manly</p><h3 tabindex="-1">Manly by ferry</h3></div>
+              <span class="stay">Sleep · Sydney, night 3 of 3</span>
+            </div>
+            <div class="day-layout">
+              <div class="agenda">
+                <div class="agenda-item"><span class="time-label">10:00</span><div><strong>Circular Quay → Manly</strong><p>Take the <a href="https://www.sydney.com/destinations/sydney/sydney-city/city-centre/transport/circular-quay-manly-ferry">Manly ferry</a> for views of the Opera House and bridge from the water.</p></div></div>
+              <div class="agenda-item"><span class="time-label">Late AM</span><div><strong>Manly Beach and Shelly Beach</strong><p>Walk down the Corso to Manly Beach, then follow the foreshore to Shelly Beach. Stop for fish and chips or a café lunch.</p></div></div>
+              <div class="agenda-item"><span class="time-label">Afternoon</span><div><strong>Ferry back to Circular Quay</strong><p>Return with time for a waterfront wander. Check the ferry timetable once dates are set.</p></div></div>
+              </div>
+              <div class="day-side">
+                <figure class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Manly_Beach%2C_Manly%2C_New_South_Wales.jpg/960px-Manly_Beach%2C_Manly%2C_New_South_Wales.jpg" alt="Manly Beach on Sydney’s Northern Beaches" loading="lazy"><figcaption class="shot-label">Manly Beach</figcaption></figure>
+                <div class="evening"><h4>Tonight</h4><p>Final dinner for all six. Pack for the Monday flight.</p></div>
+              </div>
+            </div>
+          </article>
+          <article class="day-panel" id="day-10" data-day="10">
+            <div class="day-top">
+              <div><p class="day-kicker">Day 10 / Monday · Sydney → Singapore</p><h3 tabindex="-1">Fly home from Sydney</h3></div>
+              <span class="stay">Departure · SYD → SIN</span>
+            </div>
+            <div class="day-layout">
+              <div class="agenda">
+                <div class="agenda-item"><span class="time-label">Morning</span><div><strong>Breakfast and checkout</strong><p>If the flight is later, fit in coffee or one last walk near the hotel.</p></div></div>
+              <div class="agenda-item"><span class="time-label">Pre-flight</span><div><strong>Head to Sydney Airport</strong><p>Use Kingsford Smith Airport (SYD) for this plan. Allow time for the transfer, bag drop and international check-in.</p></div></div>
+              <div class="agenda-item"><span class="time-label">Flight</span><div><strong>Nonstop to Singapore</strong><p>Check the ticket’s Singapore arrival date if choosing a late departure.</p></div></div>
+              </div>
+              <div class="day-side">
+                <figure class="day-shot"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/1280px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg" alt="Sydney Harbour and its landmarks at dusk" loading="lazy"><figcaption class="shot-label">Sydney Harbour</figcaption></figure>
+                <div class="evening"><h4>Booking</h4><p>Pair SIN → MEL and SYD → SIN on a multi-city search. Add the Friday MEL → SYD leg separately or compare it on the same itinerary.</p></div>
+              </div>
+            </div>
+          </article>
+          <nav class="pager" id="pager" aria-label="Previous and next day" hidden>
+            <a class="outline" id="prev-day" href="#day-1">← Previous day</a>
+            <a class="outline" id="next-day" href="#day-2">Next day →</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="planning" id="checklist" aria-labelledby="check-heading">
+      <div class="wrap section">
+        <div class="section-heading"><h2 id="check-heading">Before you go</h2><button class="outline" id="print-button" type="button">Print / save PDF</button></div>
+        <div class="check-grid">
+          <div class="check-box">
+            <div class="check-head"><h3>Booking checklist</h3><span id="check-count" aria-live="polite">0 of 9</span></div>
+            <progress id="check-progress" max="9" value="0" aria-label="Bookings completed"></progress>
+            <label><input type="checkbox" data-check="outbound"><span>Book Singapore → Melbourne and Sydney → Singapore as a multi-city ticket.</span></label>
+            <label><input type="checkbox" data-check="domestic"><span>Book a late-morning Friday flight from Melbourne to Sydney (SYD).</span></label>
+            <label><input type="checkbox" data-check="hosts"><span>Confirm the Melbourne and Colac family stays.</span></label>
+            <label><input type="checkbox" data-check="sydney"><span>Book three nights near Sydney CBD or Circular Quay. Confirm the under-18 traveller can stay with the group.</span></label>
+            <label><input type="checkbox" data-check="mountain"><span>Book one night at Mount Buller once skiing dates are confirmed.</span></label>
+            <label><input type="checkbox" data-check="snow"><span>Reserve lift passes, gear and any lessons.</span></label>
+            <label><input type="checkbox" data-check="car"><span>Book a car for six with luggage room, alpine permission and compatible chains.</span></label>
+            <label><input type="checkbox" data-check="resort"><span>Arrange resort entry, overnight parking and accommodation transfers.</span></label>
+            <label><input type="checkbox" data-check="edward"><span>Agree who will stay with the under-18 traveller during the Melbourne club nights.</span></label>
+            <p class="small muted">Ticks are saved in this browser when storage is available.</p>
+          </div>
+          <div class="resources">
+            <h3>Planning links</h3>
+            <ul>
+              <li><a href="https://www.singaporeair.com/sg/en/plan-travel/destinations/flights-from-singapore-to-melbourne/">Singapore → Melbourne flights</a></li>
+              <li><a href="https://www.virginaustralia.com/en-au/flights-from-melbourne-to-sydney">Melbourne → Sydney flights</a></li>
+              <li><a href="https://www.singaporeair.com/au/en/plan-travel/destinations/flights-from-sydney/">Sydney → Singapore flights</a></li>
+              <li><a href="https://www.mtbuller.com.au/winter/accommodation">Mount Buller accommodation</a></li>
+              <li><a href="https://www.mtbuller.com.au/winter/drive-a-car/staying-overnight">Mount Buller overnight parking and transfers</a></li>
+              <li><a href="https://transportnsw.info/trip">Sydney public transport planner</a></li>
+            </ul>
+            <h3>Driving and evenings</h3>
+            <p>The longest drive is Mount Buller → Colac. Allow about 6–7 hours with breaks, and have a rested, sober driver. Everyone joins the group dinners. The three Melbourne club nights are adults only. The under-18 traveller has alcohol-free drinks at the Colac home parties.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>Melbourne to Sydney</strong><p>Ten-day winter itinerary. Confirm snow and lift conditions, bookings and event schedules for your dates.</p><a href="#top">Back to top ↑</a></div>
+      <details class="credits">
+        <summary>Photography credits</summary>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Melbourne_skyline_at_night.jpg">Melbourne skyline</a> by Reinis Traidas · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:The_West_Ridge.jpg">Mt Buller</a> by Kody Appleton · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Brighton_bathing_boxes.jpg">Brighton bathing boxes</a> by Misaochan2 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Lake_Colac.jpg">Lake Colac</a> by 1geel0ng1 · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge_Dusk_(2)_2019-06-21.jpg">Sydney Harbour</a> by Benh LIEU SONG · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Bondi_Beach_--_2019_--_2349.jpg">Sydney (AU), Bondi Beach -- 2019 -- 2349.jpg</a> by Dietmar Rabich / Wikimedia Commons · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Manly_Beach,_Manly,_New_South_Wales.jpg">Manly Beach</a> by Coekon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+        </ul>
+      </details>
+    </div>
+  </footer>
+  <script>
+    (() => {
+  const panels = [...document.querySelectorAll('.day-panel')];
+  const navigation = document.getElementById('day-nav');
+  const dayLinks = [...navigation.querySelectorAll('a')];
+  const toggle = document.getElementById('show-all');
+  const pager = document.getElementById('pager');
+  const previous = document.getElementById('prev-day');
+  const next = document.getElementById('next-day');
+  const announcement = document.getElementById('day-announcement');
+  const itinerary = document.getElementById('days');
+  let currentDay = 0;
+  let showingAll = false;
+
+  function dayFromHash() {
+    return panels.findIndex(panel => '#' + panel.id === window.location.hash);
+  }
+
+  function renderDays() {
+    panels.forEach((panel, index) => {
+      panel.hidden = !showingAll && index !== currentDay;
+    });
+    dayLinks.forEach((link, index) => {
+      if (!showingAll && index === currentDay) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+    });
+    toggle.setAttribute('aria-pressed', String(showingAll));
+    toggle.textContent = showingAll ? 'Show one day' : 'Show all 10 days';
+    pager.hidden = showingAll;
+    previous.hidden = currentDay === 0;
+    next.hidden = currentDay === panels.length - 1;
+    if (!previous.hidden) previous.href = '#' + panels[currentDay - 1].id;
+    if (!next.hidden) next.href = '#' + panels[currentDay + 1].id;
+    announcement.textContent = showingAll ? 'Showing all 10 days.' : 'Showing day ' + (currentDay + 1) + ' of 10.';
+  }
+
+  function selectDay(index) {
+    currentDay = index;
+    showingAll = false;
+    renderDays();
+  }
+
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#day-"]');
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey ||
+        event.ctrlKey || event.shiftKey || event.altKey) return;
+    const index = panels.findIndex(panel => '#' + panel.id === link.hash);
+    if (index < 0) return;
+    event.preventDefault();
+    if (window.location.hash !== link.hash) history.pushState(null, '', link.hash);
+    const fromPager = pager.contains(link);
+    selectDay(index);
+    if (fromPager || !navigation.contains(link)) {
+      itinerary.scrollIntoView({ block: 'start' });
+      panels[index].querySelector('h3').focus({ preventScroll: true });
+    }
+  });
+
+  window.addEventListener('hashchange', () => {
+    const index = dayFromHash();
+    if (index >= 0) {
+      selectDay(index);
+      itinerary.scrollIntoView({ block: 'start' });
+    }
+  });
+
+  toggle.addEventListener('click', () => {
+    showingAll = !showingAll;
+    renderDays();
+  });
+
+  navigation.hidden = false;
+  toggle.hidden = false;
+  const linkedDay = dayFromHash();
+  selectDay(Math.max(0, linkedDay));
+  if (linkedDay >= 0) requestAnimationFrame(() => itinerary.scrollIntoView({ block: 'start' }));
+
+  const checks = [...document.querySelectorAll('[data-check]')];
+  const count = document.getElementById('check-count');
+  const progress = document.getElementById('check-progress');
+  const storageKey = 'australia-trip-checklist-v2';
+
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) ||
+      localStorage.getItem('victoria-run-checks') || '{}') || {};
+    checks.forEach(input => { input.checked = Boolean(saved[input.dataset.check]); });
+  } catch {
+    // Local file storage can be disabled by the browser.
+  }
+
+  function updateChecklist() {
+    const done = checks.filter(input => input.checked).length;
+    count.textContent = done + ' of ' + checks.length;
+    progress.value = done;
+    try {
+      const state = Object.fromEntries(checks.map(input => [input.dataset.check, input.checked]));
+      localStorage.setItem(storageKey, JSON.stringify(state));
+    } catch {
+      // The checklist still works during the current session.
+    }
+  }
+
+  checks.forEach(input => input.addEventListener('change', updateChecklist));
+  updateChecklist();
+
+  document.getElementById('print-button').addEventListener('click', () => window.print());
+})();
+  </script>
+</body>
+</html>
